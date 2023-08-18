@@ -10,9 +10,11 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface NotaDao {
-
     @Insert(onConflict = REPLACE)
     suspend fun salva(note: Nota)
+
+    @Insert
+    suspend fun salva(note: List<Nota>)
 
     @Query("SELECT * FROM Nota")
     fun buscaTodas() : Flow<List<Nota>>
