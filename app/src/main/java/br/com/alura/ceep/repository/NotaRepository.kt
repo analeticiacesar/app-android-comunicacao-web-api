@@ -30,6 +30,7 @@ class NotaRepository(
 
     suspend fun salva(nota: Nota) {
         dao.salva(nota)
+        webClient.salva(nota)
     }
 
 }
