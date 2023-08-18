@@ -1,6 +1,5 @@
 package br.com.alura.ceep.repository
 
-import android.util.Log
 import br.com.alura.ceep.database.dao.NotaDao
 import br.com.alura.ceep.model.Nota
 import br.com.alura.ceep.webclient.NotaWebClient
